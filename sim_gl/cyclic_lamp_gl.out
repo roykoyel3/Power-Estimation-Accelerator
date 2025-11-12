@@ -1,0 +1,107 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x55565c861950 .scope module, "cyclic_tb" "cyclic_tb" 2 1;
+ .timescale 0 0;
+v0x55565c888060_0 .var "clock", 0 0;
+v0x55565c888100_0 .net "light", 2 0, L_0x55565c888900;  1 drivers
+S_0x55565c861ad0 .scope module, "DUT" "cyclic_lamp" 2 4, 3 5 0, S_0x55565c861950;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clock"
+    .port_info 1 /OUTPUT 3 "light"
+L_0x55565c888370 .functor OR 1, L_0x55565c8881a0, L_0x55565c8882a0, C4<0>, C4<0>;
+L_0x55565c888480 .functor NOT 1, L_0x55565c888370, C4<0>, C4<0>, C4<0>;
+L_0x55565c888700 .functor NOT 1, L_0x55565c8885e0, C4<0>, C4<0>, C4<0>;
+L_0x55565c8887c0 .functor AND 1, L_0x55565c888540, L_0x55565c888700, C4<1>, C4<1>;
+L_0x55565c888c50 .functor NOT 1, L_0x55565c888b20, C4<0>, C4<0>, C4<0>;
+L_0x55565c888cc0 .functor AND 1, L_0x55565c888a40, L_0x55565c888c50, C4<1>, C4<1>;
+v0x55565c850300_0 .net *"_s13", 0 0, L_0x55565c888540;  1 drivers
+v0x55565c850900_0 .net *"_s15", 0 0, L_0x55565c8885e0;  1 drivers
+v0x55565c8873a0_0 .net *"_s16", 0 0, L_0x55565c888700;  1 drivers
+v0x55565c887460_0 .net *"_s18", 0 0, L_0x55565c8887c0;  1 drivers
+v0x55565c887540_0 .net *"_s24", 0 0, L_0x55565c888a40;  1 drivers
+v0x55565c887670_0 .net *"_s26", 0 0, L_0x55565c888b20;  1 drivers
+v0x55565c887750_0 .net *"_s27", 0 0, L_0x55565c888c50;  1 drivers
+v0x55565c887830_0 .net *"_s29", 0 0, L_0x55565c888cc0;  1 drivers
+v0x55565c887910_0 .net *"_s3", 0 0, L_0x55565c8881a0;  1 drivers
+v0x55565c8879f0_0 .net *"_s5", 0 0, L_0x55565c8882a0;  1 drivers
+v0x55565c887ad0_0 .net *"_s6", 0 0, L_0x55565c888370;  1 drivers
+v0x55565c887bb0_0 .net *"_s8", 0 0, L_0x55565c888480;  1 drivers
+v0x55565c887c90_0 .net "clock", 0 0, v0x55565c888060_0;  1 drivers
+v0x55565c887d70_0 .net "light", 2 0, L_0x55565c888900;  alias, 1 drivers
+v0x55565c887e70_0 .var "state", 2 0;
+E_0x55565c82a620 .event posedge, v0x55565c887c90_0;
+L_0x55565c8881a0 .part v0x55565c887e70_0, 2, 1;
+L_0x55565c8882a0 .part v0x55565c887e70_0, 1, 1;
+L_0x55565c888540 .part v0x55565c887e70_0, 1, 1;
+L_0x55565c8885e0 .part L_0x55565c888900, 2, 1;
+L_0x55565c888900 .concat8 [ 1 1 1 0], L_0x55565c8887c0, L_0x55565c888cc0, L_0x55565c888480;
+L_0x55565c888a40 .part v0x55565c887e70_0, 2, 1;
+L_0x55565c888b20 .part L_0x55565c888900, 2, 1;
+    .scope S_0x55565c861ad0;
+T_0 ;
+    %wait E_0x55565c82a620;
+    %load/vec4 v0x55565c887e70_0;
+    %parti/s 1, 1, 2;
+    %ix/load 4, 0, 0;
+    %ix/load 5, 0, 0;
+    %flag_set/imm 4, 0;
+    %assign/vec4/off/d v0x55565c887e70_0, 4, 5;
+    %jmp T_0;
+    .thread T_0;
+    .scope S_0x55565c861ad0;
+T_1 ;
+    %wait E_0x55565c82a620;
+    %load/vec4 v0x55565c887e70_0;
+    %parti/s 1, 2, 3;
+    %ix/load 4, 1, 0;
+    %ix/load 5, 0, 0;
+    %flag_set/imm 4, 0;
+    %assign/vec4/off/d v0x55565c887e70_0, 4, 5;
+    %jmp T_1;
+    .thread T_1;
+    .scope S_0x55565c861ad0;
+T_2 ;
+    %wait E_0x55565c82a620;
+    %load/vec4 v0x55565c887e70_0;
+    %parti/s 1, 0, 2;
+    %ix/load 4, 2, 0;
+    %ix/load 5, 0, 0;
+    %flag_set/imm 4, 0;
+    %assign/vec4/off/d v0x55565c887e70_0, 4, 5;
+    %jmp T_2;
+    .thread T_2;
+    .scope S_0x55565c861950;
+T_3 ;
+    %delay 5, 0;
+    %load/vec4 v0x55565c888060_0;
+    %inv;
+    %store/vec4 v0x55565c888060_0, 0, 1;
+    %jmp T_3;
+    .thread T_3;
+    .scope S_0x55565c861950;
+T_4 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55565c888060_0, 0, 1;
+    %delay 100, 0;
+    %vpi_call 2 8 "$finish" {0 0 0};
+    %end;
+    .thread T_4;
+    .scope S_0x55565c861950;
+T_5 ;
+    %vpi_call 2 12 "$dumpfile", "sim_gl/cyclic_lamp_gl.vcd" {0 0 0};
+    %vpi_call 2 13 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55565c861950 {0 0 0};
+    %vpi_call 2 14 "$monitor", $time, "RGY=%b", v0x55565c888100_0 {0 0 0};
+    %end;
+    .thread T_5;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb/cyclic_lamp_tb.v";
+    "gl_netlist/cyclic_lamp_gl.v";

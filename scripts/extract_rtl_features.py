@@ -13,7 +13,7 @@ import numpy as np
 def extract_rtl_features(vcd_path, clock_freq=None):
 
     if not os.path.exists(vcd_path):
-        raise FileNotFoundException(f"File not found: {vcd_path}")
+        raise FileNotFoundError(f"File not found: {vcd_path}")
 
     vcd = VCDVCD(vcd_path, store_tvs=True)
     features = []
@@ -33,7 +33,7 @@ def extract_rtl_features(vcd_path, clock_freq=None):
             raise ValueError("Empty VCD: no signals found.")
 
         if hasattr(signals[0], "reference"):
-            # List of signal *objects*
+            # List of signal objects
             iterator = [(s.reference, s) for s in signals]
 
         else:
@@ -50,7 +50,6 @@ def extract_rtl_features(vcd_path, clock_freq=None):
 
     else:
         raise TypeError("Unknown VCD signals structure received.")
-
 
     # ---------------------------------------------------------
     # Extract features
@@ -132,7 +131,5 @@ def extract_rtl_features(vcd_path, clock_freq=None):
 
 if __name__ == "__main__":
     extract_rtl_features(
-        "/home/koyel/VLSI_projects/power_estimator/vcd/tff_rtl.vcd",
-        clock_freq=100e6
-    )
+        "/home/koyel/VLSI_projects/power_es
 
