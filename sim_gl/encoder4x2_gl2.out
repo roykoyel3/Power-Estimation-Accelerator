@@ -1,0 +1,122 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x5f14158c9780 .scope module, "encoder4x2_tb2" "encoder4x2_tb2" 2 23;
+ .timescale -9 -12;
+v0x5f1415904ae0_0 .var "d", 3 0;
+v0x5f1415904ba0_0 .net "out", 1 0, L_0x5f1415906450;  1 drivers
+S_0x5f14158c8fe0 .scope module, "dut" "encoder4x2" 2 27, 3 5 0, S_0x5f14158c9780;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "d";
+    .port_info 1 /OUTPUT 2 "out";
+L_0x5f1415904d80 .functor OR 1, L_0x5f1415904c40, L_0x5f1415904ce0, C4<0>, C4<0>;
+L_0x5f1415905000 .functor NOT 1, L_0x5f1415904f30, C4<0>, C4<0>, C4<0>;
+L_0x5f1415905070 .functor OR 1, L_0x5f1415904e90, L_0x5f1415905000, C4<0>, C4<0>;
+L_0x5f1415905300 .functor NOT 1, L_0x5f1415905220, C4<0>, C4<0>, C4<0>;
+L_0x5f14159053f0 .functor OR 1, L_0x5f1415905180, L_0x5f1415905300, C4<0>, C4<0>;
+L_0x5f1415905690 .functor OR 1, L_0x5f1415905500, L_0x5f14159055a0, C4<0>, C4<0>;
+L_0x5f1415905810 .functor OR 1, L_0x5f1415905690, L_0x5f14159053f0, C4<0>, C4<0>;
+L_0x5f1415905ac0 .functor NOT 1, L_0x5f14159059c0, C4<0>, C4<0>, C4<0>;
+L_0x5f1415905b80 .functor OR 1, L_0x5f1415905920, L_0x5f1415905ac0, C4<0>, C4<0>;
+L_0x5f1415905c90 .functor OR 1, L_0x5f1415905070, L_0x5f1415904d80, C4<0>, C4<0>;
+L_0x5f1415905e00 .functor AND 1, L_0x5f1415905c90, L_0x5f1415905810, C4<1>, C4<1>;
+L_0x5f1415905ec0 .functor NOT 1, L_0x5f1415905e00, C4<0>, C4<0>, C4<0>;
+L_0x5f1415905ff0 .functor AND 1, L_0x5f1415905b80, L_0x5f1415905070, C4<1>, C4<1>;
+L_0x5f14159060b0 .functor OR 1, L_0x5f1415905ff0, L_0x5f1415904d80, C4<0>, C4<0>;
+L_0x5f1415905f80 .functor NOT 1, L_0x5f14159060b0, C4<0>, C4<0>, C4<0>;
+L_0x5f1415906240 .functor NOT 1, L_0x5f1415905f80, C4<0>, C4<0>, C4<0>;
+L_0x5f1415906390 .functor AND 1, L_0x5f1415905810, L_0x5f1415906240, C4<1>, C4<1>;
+L_0x5f1415906590 .functor NOT 1, L_0x5f1415906390, C4<0>, C4<0>, C4<0>;
+L_0x5f14159066f0 .functor AND 1, L_0x5f1415905f80, L_0x5f1415906590, C4<1>, C4<1>;
+v0x5f14158d85e0_0 .net "_00_", 0 0, L_0x5f1415905690;  1 drivers
+v0x5f14159030b0_0 .net "_01_", 0 0, L_0x5f1415905810;  1 drivers
+v0x5f1415903170_0 .net "_02_", 0 0, L_0x5f1415905b80;  1 drivers
+v0x5f1415903210_0 .net "_03_", 0 0, L_0x5f1415905f80;  1 drivers
+v0x5f14159032d0_0 .net "_04_", 0 0, L_0x5f1415906390;  1 drivers
+v0x5f14159033e0_0 .net "_05_", 0 0, L_0x5f1415904d80;  1 drivers
+v0x5f14159034a0_0 .net "_06_", 0 0, L_0x5f1415905070;  1 drivers
+v0x5f1415903560_0 .net "_07_", 0 0, L_0x5f14159053f0;  1 drivers
+v0x5f1415903620_0 .net *"_ivl_1", 0 0, L_0x5f1415904c40;  1 drivers
+v0x5f1415903700_0 .net *"_ivl_10", 0 0, L_0x5f1415905000;  1 drivers
+v0x5f14159037e0_0 .net *"_ivl_15", 0 0, L_0x5f1415905180;  1 drivers
+v0x5f14159038c0_0 .net *"_ivl_17", 0 0, L_0x5f1415905220;  1 drivers
+v0x5f14159039a0_0 .net *"_ivl_18", 0 0, L_0x5f1415905300;  1 drivers
+v0x5f1415903a80_0 .net *"_ivl_23", 0 0, L_0x5f1415905500;  1 drivers
+v0x5f1415903b60_0 .net *"_ivl_25", 0 0, L_0x5f14159055a0;  1 drivers
+v0x5f1415903c40_0 .net *"_ivl_3", 0 0, L_0x5f1415904ce0;  1 drivers
+v0x5f1415903d20_0 .net *"_ivl_31", 0 0, L_0x5f1415905920;  1 drivers
+v0x5f1415903e00_0 .net *"_ivl_33", 0 0, L_0x5f14159059c0;  1 drivers
+v0x5f1415903ee0_0 .net *"_ivl_34", 0 0, L_0x5f1415905ac0;  1 drivers
+v0x5f1415903fc0_0 .net *"_ivl_40", 0 0, L_0x5f1415905c90;  1 drivers
+v0x5f14159040a0_0 .net *"_ivl_42", 0 0, L_0x5f1415905e00;  1 drivers
+v0x5f1415904180_0 .net *"_ivl_44", 0 0, L_0x5f1415905ec0;  1 drivers
+v0x5f1415904260_0 .net *"_ivl_46", 0 0, L_0x5f1415905ff0;  1 drivers
+v0x5f1415904340_0 .net *"_ivl_48", 0 0, L_0x5f14159060b0;  1 drivers
+v0x5f1415904420_0 .net *"_ivl_52", 0 0, L_0x5f1415906240;  1 drivers
+v0x5f1415904500_0 .net *"_ivl_59", 0 0, L_0x5f1415906590;  1 drivers
+v0x5f14159045e0_0 .net *"_ivl_61", 0 0, L_0x5f14159066f0;  1 drivers
+v0x5f14159046c0_0 .net *"_ivl_7", 0 0, L_0x5f1415904e90;  1 drivers
+v0x5f14159047a0_0 .net *"_ivl_9", 0 0, L_0x5f1415904f30;  1 drivers
+v0x5f1415904880_0 .net "d", 3 0, v0x5f1415904ae0_0;  1 drivers
+v0x5f1415904980_0 .net "out", 1 0, L_0x5f1415906450;  alias, 1 drivers
+L_0x5f1415904c40 .part v0x5f1415904ae0_0, 1, 1;
+L_0x5f1415904ce0 .part v0x5f1415904ae0_0, 0, 1;
+L_0x5f1415904e90 .part v0x5f1415904ae0_0, 2, 1;
+L_0x5f1415904f30 .part v0x5f1415904ae0_0, 3, 1;
+L_0x5f1415905180 .part v0x5f1415904ae0_0, 0, 1;
+L_0x5f1415905220 .part v0x5f1415904ae0_0, 1, 1;
+L_0x5f1415905500 .part v0x5f1415904ae0_0, 3, 1;
+L_0x5f14159055a0 .part v0x5f1415904ae0_0, 2, 1;
+L_0x5f1415905920 .part v0x5f1415904ae0_0, 3, 1;
+L_0x5f14159059c0 .part v0x5f1415904ae0_0, 2, 1;
+L_0x5f1415906450 .concat8 [ 1 1 0 0], L_0x5f1415905ec0, L_0x5f14159066f0;
+    .scope S_0x5f14158c9780;
+T_0 ;
+    %vpi_call 2 30 "$dumpfile", "vcd/encoder4x2_gl2.vcd" {0 0 0};
+    %vpi_call 2 31 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x5f14158c9780 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x5f14158c9780;
+T_1 ;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v0x5f1415904ae0_0, 0, 4;
+    %delay 5000, 0;
+    %pushi/vec4 1, 0, 4;
+    %store/vec4 v0x5f1415904ae0_0, 0, 4;
+    %delay 10000, 0;
+    %pushi/vec4 2, 0, 4;
+    %store/vec4 v0x5f1415904ae0_0, 0, 4;
+    %delay 5000, 0;
+    %pushi/vec4 4, 0, 4;
+    %store/vec4 v0x5f1415904ae0_0, 0, 4;
+    %delay 5000, 0;
+    %pushi/vec4 8, 0, 4;
+    %store/vec4 v0x5f1415904ae0_0, 0, 4;
+    %delay 12000, 0;
+    %pushi/vec4 2, 0, 4;
+    %store/vec4 v0x5f1415904ae0_0, 0, 4;
+    %delay 15000, 0;
+    %pushi/vec4 8, 0, 4;
+    %store/vec4 v0x5f1415904ae0_0, 0, 4;
+    %delay 5000, 0;
+    %pushi/vec4 2, 0, 4;
+    %store/vec4 v0x5f1415904ae0_0, 0, 4;
+    %delay 10000, 0;
+    %pushi/vec4 2, 0, 4;
+    %store/vec4 v0x5f1415904ae0_0, 0, 4;
+    %delay 5000, 0;
+    %vpi_call 2 52 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb/encoder4x2_tb2.v";
+    "gl_netlist/encoder4x2_gl.v";

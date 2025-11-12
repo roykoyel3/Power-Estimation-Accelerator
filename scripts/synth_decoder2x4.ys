@@ -1,0 +1,5 @@
+read_verilog rtl/decoder2x4.v
+synth -top decoder2x4
+write_verilog gl_netlist/decoder2x4_gl.v
+stat
+

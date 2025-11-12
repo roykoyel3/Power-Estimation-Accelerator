@@ -1,0 +1,88 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x5e6bc7fdefa0 .scope module, "decoder2x4_tb3" "decoder2x4_tb3" 2 23;
+ .timescale -9 -12;
+v0x5e6bc8006790_0 .var "in", 1 0;
+v0x5e6bc8006850_0 .net "out", 3 0, L_0x5e6bc8007340;  1 drivers
+S_0x5e6bc7fdf130 .scope module, "dut" "decoder2x4" 2 27, 3 5 0, S_0x5e6bc7fdefa0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 2 "in";
+    .port_info 1 /OUTPUT 4 "out";
+L_0x5e6bc8006a60 .functor OR 1, L_0x5e6bc80068f0, L_0x5e6bc80069c0, C4<0>, C4<0>;
+L_0x5e6bc8006ba0 .functor NOT 1, L_0x5e6bc8006a60, C4<0>, C4<0>, C4<0>;
+L_0x5e6bc8006dd0 .functor NOT 1, L_0x5e6bc8006d00, C4<0>, C4<0>, C4<0>;
+L_0x5e6bc8006e70 .functor AND 1, L_0x5e6bc8006c60, L_0x5e6bc8006dd0, C4<1>, C4<1>;
+L_0x5e6bc8007130 .functor NOT 1, L_0x5e6bc8007050, C4<0>, C4<0>, C4<0>;
+L_0x5e6bc80071f0 .functor AND 1, L_0x5e6bc8006fb0, L_0x5e6bc8007130, C4<1>, C4<1>;
+L_0x5e6bc80076b0 .functor AND 1, L_0x5e6bc8007520, L_0x5e6bc8007610, C4<1>, C4<1>;
+v0x5e6bc7fcaa40_0 .net *"_ivl_13", 0 0, L_0x5e6bc8006c60;  1 drivers
+v0x5e6bc80058c0_0 .net *"_ivl_15", 0 0, L_0x5e6bc8006d00;  1 drivers
+v0x5e6bc80059a0_0 .net *"_ivl_16", 0 0, L_0x5e6bc8006dd0;  1 drivers
+v0x5e6bc8005a60_0 .net *"_ivl_18", 0 0, L_0x5e6bc8006e70;  1 drivers
+v0x5e6bc8005b40_0 .net *"_ivl_23", 0 0, L_0x5e6bc8006fb0;  1 drivers
+v0x5e6bc8005c70_0 .net *"_ivl_25", 0 0, L_0x5e6bc8007050;  1 drivers
+v0x5e6bc8005d50_0 .net *"_ivl_26", 0 0, L_0x5e6bc8007130;  1 drivers
+v0x5e6bc8005e30_0 .net *"_ivl_28", 0 0, L_0x5e6bc80071f0;  1 drivers
+v0x5e6bc8005f10_0 .net *"_ivl_3", 0 0, L_0x5e6bc80068f0;  1 drivers
+v0x5e6bc8005ff0_0 .net *"_ivl_34", 0 0, L_0x5e6bc8007520;  1 drivers
+v0x5e6bc80060d0_0 .net *"_ivl_36", 0 0, L_0x5e6bc8007610;  1 drivers
+v0x5e6bc80061b0_0 .net *"_ivl_37", 0 0, L_0x5e6bc80076b0;  1 drivers
+v0x5e6bc8006290_0 .net *"_ivl_5", 0 0, L_0x5e6bc80069c0;  1 drivers
+v0x5e6bc8006370_0 .net *"_ivl_6", 0 0, L_0x5e6bc8006a60;  1 drivers
+v0x5e6bc8006450_0 .net *"_ivl_8", 0 0, L_0x5e6bc8006ba0;  1 drivers
+v0x5e6bc8006530_0 .net "in", 1 0, v0x5e6bc8006790_0;  1 drivers
+v0x5e6bc8006630_0 .net "out", 3 0, L_0x5e6bc8007340;  alias, 1 drivers
+L_0x5e6bc80068f0 .part v0x5e6bc8006790_0, 1, 1;
+L_0x5e6bc80069c0 .part v0x5e6bc8006790_0, 0, 1;
+L_0x5e6bc8006c60 .part v0x5e6bc8006790_0, 0, 1;
+L_0x5e6bc8006d00 .part v0x5e6bc8006790_0, 1, 1;
+L_0x5e6bc8006fb0 .part v0x5e6bc8006790_0, 1, 1;
+L_0x5e6bc8007050 .part v0x5e6bc8006790_0, 0, 1;
+L_0x5e6bc8007340 .concat8 [ 1 1 1 1], L_0x5e6bc8006ba0, L_0x5e6bc8006e70, L_0x5e6bc80071f0, L_0x5e6bc80076b0;
+L_0x5e6bc8007520 .part v0x5e6bc8006790_0, 1, 1;
+L_0x5e6bc8007610 .part v0x5e6bc8006790_0, 0, 1;
+    .scope S_0x5e6bc7fdefa0;
+T_0 ;
+    %vpi_call 2 30 "$dumpfile", "vcd/decoder2x4_gl3.vcd" {0 0 0};
+    %vpi_call 2 31 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x5e6bc7fdefa0 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x5e6bc7fdefa0;
+T_1 ;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x5e6bc8006790_0, 0, 2;
+    %delay 5000, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0x5e6bc8006790_0, 0, 2;
+    %delay 5000, 0;
+    %pushi/vec4 2, 0, 2;
+    %store/vec4 v0x5e6bc8006790_0, 0, 2;
+    %delay 10000, 0;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0x5e6bc8006790_0, 0, 2;
+    %delay 7000, 0;
+    %pushi/vec4 3, 0, 2;
+    %store/vec4 v0x5e6bc8006790_0, 0, 2;
+    %delay 8000, 0;
+    %pushi/vec4 1, 0, 2;
+    %store/vec4 v0x5e6bc8006790_0, 0, 2;
+    %delay 5000, 0;
+    %pushi/vec4 0, 0, 2;
+    %store/vec4 v0x5e6bc8006790_0, 0, 2;
+    %delay 12000, 0;
+    %vpi_call 2 48 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb/decoder2x4_tb3.v";
+    "gl_netlist/decoder2x4_gl.v";

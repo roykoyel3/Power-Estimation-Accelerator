@@ -1,0 +1,5 @@
+read_verilog rtl/mux4x1.v
+synth -top mux4x1
+write_verilog gl_netlist/mux4x1_gl.v
+stat
+

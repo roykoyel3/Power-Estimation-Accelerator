@@ -1,0 +1,33 @@
+# Ignore all VCD files (RTL + GL)
+vcd/*.vcd
+*.vcd
+
+# Ignore synthesis logs & reports
+synth/*.log
+synth/*.rpt
+synth/*.txt
+synth/*_synth.out
+
+# Ignore generated feature CSVs
+data/*.csv
+
+# Ignore ModelSim/Vivado/other temp files
+*.wlf
+*.jou
+*.str
+*.xpr
+*.runs/
+*.cache/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+
+# Ignore backup or temp files
+*.save
+*.tmp
+
+# Ignore OS-specific junk
+.DS_Store
+Thumbs.db
+

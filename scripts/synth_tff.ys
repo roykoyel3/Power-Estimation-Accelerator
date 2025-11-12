@@ -1,0 +1,4 @@
+read_verilog rtl/tff.v
+synth -top tff
+write_verilog gl_netlist/tff_gl.v
+stat
