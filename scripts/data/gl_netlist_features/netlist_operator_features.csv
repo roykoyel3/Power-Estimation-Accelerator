@@ -1,0 +1,11 @@
+list_name,num_AND,num_OR,num_XOR,num_NAND,num_NOR,num_INV,num_BUF,num_DFF,total_gates,num_nets,avg_fanout,structural_complexity
+full_adder_gl.v,1,1,1,0,0,0,0,0,3,3,0.75,6.75
+demux1x4_gl.v,5,3,0,1,0,0,0,0,9,4,1.6,14.6
+jkff_gl.v,0,0,0,0,0,2,0,0,2,2,1.0,5.0
+mux2x1_gl.v,0,0,0,0,0,0,0,0,0,0,1,1
+srff_gl.v,1,2,1,1,1,1,0,0,7,3,1.0,11.0
+decoder2x4_gl.v,3,1,0,0,1,0,0,0,5,0,4,9
+half_adder_gl.v,1,0,1,0,0,0,0,0,2,0,2,4
+tff_gl.v,0,0,1,0,0,1,0,0,2,1,1.0,4.0
+mux4x1_gl.v,0,0,0,0,0,0,0,0,0,2,0.33,2.33
+encoder4x2_gl.v,4,8,0,2,2,0,0,0,16,8,1.11,25.11

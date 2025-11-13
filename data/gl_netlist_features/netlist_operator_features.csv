@@ -1,0 +1,11 @@
+file,xor_operator,and_operator,or_operator,assign_operator,and,or,xor,nand,nor,xnor,buf,not
+full_adder_gl.v,1,1,1,3,0,0,0,0,0,0,0,0
+demux1x4_gl.v,0,5,3,8,0,0,0,0,0,0,0,0
+jkff_gl.v,0,0,0,3,0,0,0,0,0,0,0,0
+mux2x1_gl.v,0,0,0,1,0,0,0,0,0,0,0,0
+srff_gl.v,1,1,2,4,0,0,0,0,0,0,0,0
+decoder2x4_gl.v,0,3,1,4,0,0,0,0,0,0,0,0
+half_adder_gl.v,1,1,0,2,0,0,0,0,0,0,0,0
+tff_gl.v,1,0,0,2,0,0,0,0,0,0,0,0
+mux4x1_gl.v,0,0,0,1,0,0,0,0,0,0,0,0
+encoder4x2_gl.v,0,4,8,10,0,0,0,0,0,0,0,0
