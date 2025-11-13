@@ -47,7 +47,7 @@ Power-Estimation-Accelerator/
 
 ## 🛠️ Technology Stack  
 - **Python 3**  
-- **PyVCD / custom parsers**  
+- **VCDVCD / custom parsers**  
 - **Verilog (RTL & Gate-Level)**  
 - **Synthesis tools (Yosys)**  
 - **VCD simulation tools (Icarus Verilog)**
