@@ -1,0 +1,11 @@
+file_name,num_AND,num_OR,num_XOR,num_NAND,num_NOR,num_DFF,total_cells,total_wires,total_area,critical_path_delay,slack,power,capacitance,logic_levels,internal_signals,structural_complexity
+tff_yosys.log,2,6,1,0,0,2,2,2,,,,,,0,0,11
+mux2x1_yosys.log,2,6,0,0,0,0,2,2,,,,,,0,0,8
+full_adder_yosys.log,3,7,1,0,0,0,6,6,,,,,,0,0,11
+half_adder_yosys.log,3,6,1,0,0,0,2,2,,,,,,0,0,10
+mux4x1_yosys.log,2,6,0,0,0,0,6,6,,,,,,0,0,8
+srff_yosys.log,2,6,1,0,0,2,2,2,,,,,,0,0,11
+decoder2x4_yosys.log,3,6,0,0,1,0,2,2,,,,,,0,0,10
+encoder4x2_yosys.log,2,7,0,0,0,0,2,2,,,,,,0,0,9
+demux1x4_yosys.log,2,7,0,1,0,0,2,2,,,,,,0,0,10
+jkff_yosys.log,2,6,0,0,0,2,2,2,,,,,,0,0,10
