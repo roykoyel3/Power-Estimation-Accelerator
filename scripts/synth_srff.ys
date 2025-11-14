@@ -1,5 +1,0 @@
-read_verilog rtl/srff.v
-synth -top srff
-write_verilog gl_netlist/srff_gl.v
-stat
-

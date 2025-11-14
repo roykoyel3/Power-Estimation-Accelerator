@@ -131,5 +131,14 @@ def extract_rtl_features(vcd_path, clock_freq=None):
 
 if __name__ == "__main__":
     extract_rtl_features(
-        "/home/koyel/VLSI_projects/power_es
-
+        "/home/ishita10/VLSI_projects/power_estimator/sim_rtl/traffic_rtl_1.vcd",
+        clock_freq=100e6
+        )
+        
+        
+        
+        
+        
+        
+        
+        

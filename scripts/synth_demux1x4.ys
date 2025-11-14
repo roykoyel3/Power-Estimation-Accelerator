@@ -1,5 +1,0 @@
-read_verilog rtl/demux1x4.v
-synth -top demux1x4
-write_verilog gl_netlist/demux1x4_gl.v
-stat
-

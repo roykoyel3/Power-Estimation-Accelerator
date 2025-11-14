@@ -1,0 +1,5 @@
+signal,total_toggles,glitch_toggles,hazard_ratio,toggle_density,effective_activity,duty_cycle,glitch_power_proxy,total_power_proxy
+MIPS_tb.clk1,250,0,0.0,0.25100401606425704,0.25100401606425704,0.25100401606425704,0,250
+MIPS_tb.clk2,250,0,0.0,0.25,0.25,0.25,0,250
+MIPS_tb.DUT.clk1,250,0,0.0,0.25100401606425704,0.25100401606425704,0.25100401606425704,0,250
+MIPS_tb.DUT.clk2,250,0,0.0,0.25,0.25,0.25,0,250

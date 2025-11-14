@@ -1,5 +1,0 @@
-read_verilog rtl/encoder4x2.v
-synth -top encoder4x2
-write_verilog gl_netlist/encoder4x2_gl.v
-stat
-

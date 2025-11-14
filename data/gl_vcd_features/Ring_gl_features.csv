@@ -1,0 +1,8 @@
+signal,total_toggles,glitch_toggles,hazard_ratio,toggle_density,effective_activity,duty_cycle,glitch_power_proxy,total_power_proxy
+ring_tb.count[7:0],2,0,0.0,0.4,0.4,0.0,0,2
+ring_tb.clk,15,0,0.0,1.0,1.0,0.4666666666666667,0,15
+ring_tb.init,1,0,0.0,0.2,0.2,1.0,0,1
+ring_tb.DUT.clk,15,0,0.0,1.0,1.0,0.4666666666666667,0,15
+ring_tb.DUT.init,1,0,0.0,0.2,0.2,1.0,0,1
+ring_tb.DUT._00_[7:0],1,0,0.0,0.2,0.2,0.0,0,1
+ring_tb.DUT.count[7:0],2,0,0.0,0.4,0.4,0.0,0,2

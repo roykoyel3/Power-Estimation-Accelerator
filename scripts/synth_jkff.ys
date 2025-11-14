@@ -1,5 +1,0 @@
-read_verilog rtl/jkff.v
-synth -top jkff
-write_verilog gl_netlist/jkff_gl.v
-stat
-

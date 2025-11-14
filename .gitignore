@@ -1,6 +1,7 @@
 # Ignore all VCD files (RTL + GL)
 vcd/*.vcd
 sim_rtl/*.vcd
+sim_gl/*.vcd
 *.vcd
 
 # Ignore synthesis logs & reports

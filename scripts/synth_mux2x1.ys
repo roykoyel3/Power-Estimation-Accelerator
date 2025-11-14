@@ -1,5 +1,0 @@
-read_verilog rtl/mux2x1.v
-synth -top mux2x1
-write_verilog gl_netlist/mux2x1_gl.v
-stat
-

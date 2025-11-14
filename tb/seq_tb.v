@@ -5,7 +5,7 @@ module seq_tb ;
    always #5 clk = ~ clk ;
    initial 
        begin
-        $dumpfile("sim_rtl/seq_detector_rtl.vcd");
+        $dumpfile("sim_gl/seq_detector_gl.vcd");
         $dumpvars(0,seq_tb);
         clk=1'b0 ; rst = 1'b1;
         #15 rst = 1'b0 ;

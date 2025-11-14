@@ -123,6 +123,6 @@ def extract_gl_features(vcd_path, clock_period_ns=10):
 
 if __name__ == "__main__":
     extract_gl_features(
-        "/home/koyel/VLSI_projects/power_estimator/vcd/decoder2x4_gl.vcd",
+        "/home/ishita10/VLSI_projects/power_estimator/sim_gl/seq_detector_gl.vcd",
         clock_period_ns=10
     )

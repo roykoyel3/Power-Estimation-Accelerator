@@ -1,4 +1,0 @@
-read_verilog rtl/full_adder.v
-synth -top full_adder
-write_verilog gl_netlist/full_adder_gl.v
-stat

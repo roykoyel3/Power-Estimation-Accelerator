@@ -1,4 +1,5 @@
 file_name,num_AND,num_OR,num_XOR,num_NAND,num_NOR,num_DFF,total_cells,total_wires,total_area,critical_path_delay,slack,power,capacitance,logic_levels,internal_signals,structural_complexity
+
 tff_yosys.log,2,6,1,0,0,2,2,2,,,,,,0,0,11
 mux2x1_yosys.log,2,6,0,0,0,0,2,2,,,,,,0,0,8
 full_adder_yosys.log,3,7,1,0,0,0,6,6,,,,,,0,0,11
@@ -9,3 +10,15 @@ decoder2x4_yosys.log,3,6,0,0,1,0,2,2,,,,,,0,0,10
 encoder4x2_yosys.log,2,7,0,0,0,0,2,2,,,,,,0,0,9
 demux1x4_yosys.log,2,7,0,1,0,0,2,2,,,,,,0,0,10
 jkff_yosys.log,2,6,0,0,0,2,2,2,,,,,,0,0,10
+
+seq_detector_yosys.log,3,6,0,0,0,2,2,2,,,,,,0,0,11
+ring_counter_yosys.log,2,7,0,0,0,2,2,2,,,,,,0,0,11
+evm_yosys.log,5,10,3,3,2,8,10,10,,,,,,0,0,31
+traffic_yosys.log,3,7,1,1,1,4,2,2,,,,,,0,0,17
+alu_16_yosys.log,3,7,1,1,1,0,2,2,,,,,,0,0,13
+vm_yosys.log,2,7,0,1,1,4,2,2,,,,,,0,0,15
+cyclic_lamp_yosys.log,2,6,0,0,1,2,2,2,,,,,,0,0,11
+counter_yosys.log,2,6,1,1,0,2,2,2,,,,,,0,0,12
+dff_yosys.log,2,6,0,0,0,2,2,2,,,,,,0,0,10
+MIPS_yosys.log,2,6,0,0,0,0,2,2,,,,,,0,0,8
+

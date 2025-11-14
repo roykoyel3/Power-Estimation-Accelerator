@@ -1,9 +1,0 @@
-signal,total_toggles,glitch_toggles,hazard_ratio,toggle_density,effective_activity,duty_cycle,glitch_power_proxy,total_power_proxy
-half_adder_tb3.SUM,5,0,0.0,0.000125,0.000125,0.75,0,5
-half_adder_tb3.CARRY,4,0,0.0,0.00011428571428571428,0.00011428571428571428,0.2857142857142857,0,4
-half_adder_tb3.t_a,2,0,0.0,5e-05,5e-05,0.625,0,2
-half_adder_tb3.t_b,3,0,0.0,8.571428571428571e-05,8.571428571428571e-05,0.7142857142857143,0,3
-half_adder_tb3.dut.a,2,0,0.0,5e-05,5e-05,0.625,0,2
-half_adder_tb3.dut.b,3,0,0.0,8.571428571428571e-05,8.571428571428571e-05,0.7142857142857143,0,3
-half_adder_tb3.dut.carry,4,0,0.0,0.00011428571428571428,0.00011428571428571428,0.2857142857142857,0,4
-half_adder_tb3.dut.sum,5,0,0.0,0.000125,0.000125,0.75,0,5
